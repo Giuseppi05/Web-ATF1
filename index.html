@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodMatch</title>
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+        crossorigin="anonymous"
+    >
+    <link rel="icon" type="icon/jpg" href="assets/images/logo.png">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Menú de navegación -->
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">FoodMatch</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">FoodMatch</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item px-2 text-center" data-bs-dismiss="offcanvas">
+                  <a class="nav-link" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item px-2 text-center" data-bs-dismiss="offcanvas">
+                  <a class="nav-link" href="#para-negocios">Para Negocios</a>
+                </li>
+                <li class="nav-item px-2 text-center" data-bs-dismiss="offcanvas">
+                    <a class="nav-link" href="#para-ti">Para Ti</a>
+                  </li>
+                  <li class="nav-item px-2 text-center" data-bs-dismiss="offcanvas">
+                    <a class="nav-link" href="#preguntas">Preguntas</a>
+                  </li>
+                  <li class="nav-item px-2 text-center" data-bs-dismiss="offcanvas">
+                    <a class="nav-link" href="#descarga">Descarga</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Sección 1 "INICIO" -->
+    <section id="inicio" class="row py-5 mt-4">
+        <div class="d-flex align-items-center px-lg-5 px-sm-3 vh-sm-50 flex-sm-colunm">
+            
+            <div class="container col-lg-6 text-center text-lg-start">
+                <h1 class="display-3">FoodMatch, elegir nunca fue más divertido!</h1>
+                <p class="lead">¡Descubre Restaurantes Cercanos y Encuentra Tu Favorito!. Una nueva forma para explorar y disfrutar de los mejores lugares para comer.</p>
+
+                <div class="row align-items-sm-center justify-content-lg-start">
+                    
+                    <div class="col-lg-7 mb-lg-0 mb-2 text-center">
+                        <span id="descubre">Descubre como funciona:</span>
+                    </div>
+                    
+                    <div class="col-lg-5 text-center">
+                        <button type="button" class="w-100" data-bs-toggle="modal" data-bs-target="#videoModal">
+                            <div class="svg-wrapper-1">
+                                <div class="svg-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="48px" fill="#e8eaed">
+                                        <path d="M295-157v-652l512 326-512 326Z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <span>Ver Video</span>
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="col-lg-6 justify-content-center d-none d-md-flex mt-3">
+                <img id="home-img" class="img-fluid" src="assets/images/main.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="videoModalLabel">Cómo funciona</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/xVVHZ_CJllg?si=EHIr6kJmjzVTFcZ1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección 2 "PARA NEGOCIOS" -->
+    <section id="para-negocios" class="py-4">
+        <h2 class="text-center">Para Negocios</h2>
+        <p class="text-center mb-4">¿Eres dueño de un restaurante? Registra tu negocio en FoodMatch y llega a más clientes.</p>
+        <div class="row px-4">
+            <div class="col-lg-6 justify-content-center mb-5 mb-lg-0">
+                <h3 class="text-center mb-3">Beneficios</h3>
+                <div class="row row-cols-1 row-cols-md-2 g-3">
+                    <div class="col">
+                        <div class="card h-100 p-2">
+                            <div class="card-img-top p-1 d-flex justify-content-center align-items-center">
+                                <svg class="w-25 h-100" xmlns="http://www.w3.org/2000/svg"  height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M444-200h70v-50q50-9 86-39t36-89q0-42-24-77t-96-61q-60-20-83-35t-23-41q0-26 18.5-41t53.5-15q32 0 50 15.5t26 38.5l64-26q-11-35-40.5-61T516-710v-50h-70v50q-50 11-78 44t-28 74q0 47 27.5 76t86.5 50q63 23 87.5 41t24.5 47q0 33-23.5 48.5T486-314q-33 0-58.5-20.5T390-396l-66 26q14 48 43.5 77.5T444-252v52Zm36 120q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg>
+                            </div>
+                            
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Aumento ventas</h5>
+                                <p class="card-text text-center">En nuestra app los restaurantes pueden atraer a más clientes produciendo un incremento de reservas y pedidos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 p-2">
+                            <div class="card-img-top p-1 d-flex justify-content-center align-items-center">
+                                <svg class="w-25 h-100" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path  d="M160-280v80h640v-80H160Zm0-440h88q-5-9-6.5-19t-1.5-21q0-50 35-85t85-35q30 0 55.5 15.5T460-826l20 26 20-26q18-24 44-39t56-15q50 0 85 35t35 85q0 11-1.5 21t-6.5 19h88q33 0 56.5 23.5T880-640v440q0 33-23.5 56.5T800-120H160q-33 0-56.5-23.5T80-200v-440q0-33 23.5-56.5T160-720Zm0 320h640v-240H596l84 114-64 46-136-184-136 184-64-46 82-114H160v240Zm200-320q17 0 28.5-11.5T400-760q0-17-11.5-28.5T360-800q-17 0-28.5 11.5T320-760q0 17 11.5 28.5T360-720Zm240 0q17 0 28.5-11.5T640-760q0-17-11.5-28.5T600-800q-17 0-28.5 11.5T560-760q0 17 11.5 28.5T600-720Z"/></svg>
+                            </div>
+
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Promociones exclusivas</h5>
+                                <p class="card-text text-center">Aprovecha plataforma para lanzar promociones y aparecer en la lista de recomendaciones.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 p-2">
+                            <div class="card-img-top p-1 d-flex justify-content-center align-items-center">
+                                <svg class="w-25 h-100" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M40-160v-112q0-34 17.5-62.5T104-378q62-31 126-46.5T360-440q66 0 130 15.5T616-378q29 15 46.5 43.5T680-272v112H40Zm720 0v-120q0-44-24.5-84.5T666-434q51 6 96 20.5t84 35.5q36 20 55 44.5t19 53.5v120H760ZM360-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm400-160q0 66-47 113t-113 47q-11 0-28-2.5t-28-5.5q27-32 41.5-71t14.5-81q0-42-14.5-81T544-792q14-5 28-6.5t28-1.5q66 0 113 47t47 113Z"/></svg>
+                            </div>
+
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Conexión con tus clientes</h5>
+                                <p class="card-text text-center">Facilitamos la interacción con clientes interesados, permitiendo mejorar la satisfacción del cliente.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 p-2">
+                            <div class="card-img-top p-1 d-flex justify-content-center align-items-center">
+                                <svg class="w-25 h-100" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M160-720v-80h640v80H160Zm0 560v-240h-40v-80l40-200h640l40 200v80h-40v240h-80v-240H560v240H160Zm80-80h240v-160H240v160Z"/></svg>
+                            </div>
+                            
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Tendencias del mercado</h5>
+                                <p class="card-text text-center">Ofrecemos informes sobre las preferencias de los usuarios, ayudando a los restaurantes a adaptar su oferta.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-lg-6 justify-content-center mt-2 mt-lg-0">
+                <h3 class="text-center mb-4">Contáctanos</h3>
+                <div class="container">
+                    <form class="row g-3 p-3 py-4">
+                        <div class="col-md-6 form-group">
+                            <label for="" class="form-label">Nombre del negocio:</label>
+                            <input type="text" class="form-control" placeholder="Ingrese el nombre del negocio" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="" class="form-label">Nombre del propietario:</label>
+                            <input type="text" class="form-control" placeholder="Nombre del propietario" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="" class="form-label">Correo Electrónico:</label>
+                            <input type="email" class="form-control" placeholder="Correo del negocio" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for=""  class="form-label">Teléfono:</label>
+                            <input type="number" min="0" max="999999999" class="form-control" placeholder="Teléfono" required>
+                        </div>
+                        <div class="col-12">
+                            <label for=""  class="form-label">Descripción:</label>
+                            <textarea class="form-control" rows="3" placeholder="Descripción del negocio" required></textarea>
+                        </div>
+                        <div class="col-12">
+                            <input class="form-check-input" type="checkbox" id="check" required>
+                            <label class="form-check-label" for="check">Acepto términos y condiciones</label>
+                        </div>
+                        <div class="col-12 d-flex justify-content-center">
+                            <button type="submit" class="btn">Registrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 3 "PARA TI" -->
+    <section id="para-ti" class="py-5 bg-light">
+        
+        <div class="container">
+            <h2 class="text-center mb-3 mb-md-5">Un festín para el paladar, hecho <span class="resalt">PARA TI</span></h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="fs-3 text-center text-md-start mb-4">Descubre un mundo donde cada recomendación te conecta con nuevas experiencias gastronómicas. Promociones exclusivas, menús personalizados y los mejores restaurantes cerca de ti te esperan en FoodMatch. ¡Únete ahora y transforma tu forma de elegir dónde comer!</p>
+                    <div class="row align-items-sm-center justify-content-lg-start mb-4 mb-md-0">
+                
+                        <div class="col-lg-8 text-center">
+                            <a href="#descarga">
+                                <button type="button" class="w-100" >
+                                    <div class="svg-wrapper-1">
+                                        <div class="svg-wrapper">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
+                                        </div>
+                                    </div>
+                                    <span>Descargar</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row row-cols-1 row-cols-md-2 g-3">
+                        <div class="col">
+                            <img src="assets/images/restaurant1.jpg" class="img-fluid" alt="Restaurante 1">
+                            <h5 class="mt-3 text-center">Encuentra tu favorito</h5>
+                        </div>
+                        <div class="col">
+                            <img src="assets/images/restaurant2.jpg" class="img-fluid" alt="Restaurante 2">
+                            <h5 class="mt-3 text-center">Descubre nuevos lugares</h5>
+                        </div>
+                        <div class="col">
+                            <img src="assets/images/restaurant3.jpg" class="img-fluid" alt="Restaurante 3">
+                            <h5 class="mt-3 text-center">Explora ofertas especiales</h5>
+                        </div>
+                        <div class="col">
+                            <img src="assets/images/restaurant4.jpg" class="img-fluid" alt="Restaurante 3">
+                            <h5 class="mt-3 text-center">Experimenta el sabor</h5>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 4 "PREGUNTAS FRECUENTES" -->
+    <section id="preguntas" class="">
+        <h2 class="text-center mt-4">Preguntas Frecuentes</h2>
+        <div class="row p-4">
+            <div class="col-md-6">
+                <div class="container">
+                    <div class="accordion mt-4" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    ¿Cómo funciona FoodMatch?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    FoodMatch es una plataforma que te ayuda a encontrar los mejores restaurantes cerca de ti, según tus gustos y preferencias.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    ¿Es gratis usar FoodMatch?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Sí, la aplicación es completamente gratuita para los usuarios que buscan restaurantes. Los negocios tienen la opción de registrarse para ampliar su alcance.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    ¿Cómo registro mi negocio?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Puedes registrar tu negocio llenando el formulario en la sección "Para Negocios" y nuestro equipo se pondrá en contacto contigo.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    ¿Cómo se eligen las recomendaciones de restaurantes?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    FoodMatch utiliza tus preferencias gastronómicas, ubicación y las valoraciones de otros usuarios para ofrecerte las mejores recomendaciones personalizadas.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    ¿Puedo hacer reservas o pedidos a través de FoodMatch?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Actualmente, FoodMatch te permite descubrir restaurantes, pero las reservas o pedidos se realizan directamente en los sitios web de los restaurantes o por teléfono.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 d-flex justify-content-center">
+                <img src="assets/images/question.png" class="img-fluid w-75" alt="">
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Sección 5 "DESCARGA" -->
+    <section id="descarga" class="py-5 text-white">
+        <h2 class="mb-4 text-center">Descarga y Disfruta la App!</h2>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center mb-4 mb-md-0">
+                    <img src="assets/images/img-cel-comida.png" alt="Imagen Promocional" class="img-fluid promo-image">
+            </div>
+            <div class="col-md-6 text-center" color>
+                
+                    <p class="mb-4">Descarga FoodMatch ahora y deja que tu próxima comida sea una experiencia inolvidable. ¡Tu plato perfecto está a solo un toque de distancia!</p>
+                <div class="d-flex justify-content-center mb-4">
+                    <img src="assets/images/app-store.png" alt="App Store" class="store-icon">
+                    <img src="assets/images/google-play.png" alt="Google Play" class="store-icon mx-3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 text-white" style="background-color: #333;">
+        <div class="container">
+            <div class="row">
+                <!-- Columna 1: Información sobre FoodMatch -->
+                <div class="col-md-4 text-md-left text-md-left mb-3">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#inicio" class="text-white">Inicio</a></li>
+                        <li><a href="#para-negocios" class="text-white">Para negocios</a></li>
+                        <li><a href="#para-ti" class="text-white">Para ti</a></li>
+                        <li><a href="#preguntas" class="text-white">Preguntas</a></li>
+                        <li><a href="#descarga" class="text-white">Descargas</a></li>
+                    </ul>
+                </div>
+                <!-- Columna 2: Enlaces rápidos -->
+                <div class="col-md-4 text-md-left text-md-left mb-3">
+                    <h5>Soporte</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">FAQ</a></li>
+                        <li><a href="#" class="text-white">Política de Privacidad</a></li>
+                        <li><a href="#" class="text-white">Términos de Uso</a></li>
+                        <li><a href="#" class="text-white">Mapa del Sitio</a></li>
+                    </ul>
+                </div>
+                <!-- Columna 3: Contacto y WhatsApp -->
+                <div class="col-md-4 text-md-left text-md-left">
+                    <h5>Contáctanos</h5>
+                    <p><i class="fa fa-phone"></i> +51 999999999</p>
+                    <p><i class="fa fa-envelope"></i> foodmatch.app@gmail.com</p>
+                    <p><i class="fa fa-map-marker"></i> Lima, Perú</p>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2024 FoodMatch. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">
+        <svg viewBox="0 0 256 259" width="256" height="259" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"><path d="m67.663 221.823 4.185 2.093c17.44 10.463 36.971 15.346 56.503 15.346 61.385 0 111.609-50.224 111.609-111.609 0-29.297-11.859-57.897-32.785-78.824-20.927-20.927-48.83-32.785-78.824-32.785-61.385 0-111.61 50.224-110.912 112.307 0 20.926 6.278 41.156 16.741 58.594l2.79 4.186-11.16 41.156 41.853-10.464Z" fill="#00E676"/><path d="M219.033 37.668C195.316 13.254 162.531 0 129.048 0 57.898 0 .698 57.897 1.395 128.35c0 22.322 6.278 43.947 16.742 63.478L0 258.096l67.663-17.439c18.834 10.464 39.76 15.347 60.688 15.347 70.453 0 127.653-57.898 127.653-128.35 0-34.181-13.254-66.269-36.97-89.986ZM129.048 234.38c-18.834 0-37.668-4.882-53.712-14.648l-4.185-2.093-40.458 10.463 10.463-39.76-2.79-4.186C7.673 134.63 22.322 69.058 72.546 38.365c50.224-30.692 115.097-16.043 145.79 34.181 30.692 50.224 16.043 115.097-34.18 145.79-16.045 10.463-35.576 16.043-55.108 16.043Zm61.385-77.428-7.673-3.488s-11.16-4.883-18.136-8.371c-.698 0-1.395-.698-2.093-.698-2.093 0-3.488.698-4.883 1.396 0 0-.697.697-10.463 11.858-.698 1.395-2.093 2.093-3.488 2.093h-.698c-.697 0-2.092-.698-2.79-1.395l-3.488-1.395c-7.673-3.488-14.648-7.674-20.229-13.254-1.395-1.395-3.488-2.79-4.883-4.185-4.883-4.883-9.766-10.464-13.253-16.742l-.698-1.395c-.697-.698-.697-1.395-1.395-2.79 0-1.395 0-2.79.698-3.488 0 0 2.79-3.488 4.882-5.58 1.396-1.396 2.093-3.488 3.488-4.883 1.395-2.093 2.093-4.883 1.395-6.976-.697-3.488-9.068-22.322-11.16-26.507-1.396-2.093-2.79-2.79-4.883-3.488H83.01c-1.396 0-2.79.698-4.186.698l-.698.697c-1.395.698-2.79 2.093-4.185 2.79-1.395 1.396-2.093 2.79-3.488 4.186-4.883 6.278-7.673 13.951-7.673 21.624 0 5.58 1.395 11.161 3.488 16.044l.698 2.093c6.278 13.253 14.648 25.112 25.81 35.575l2.79 2.79c2.092 2.093 4.185 3.488 5.58 5.58 14.649 12.557 31.39 21.625 50.224 26.508 2.093.697 4.883.697 6.976 1.395h6.975c3.488 0 7.673-1.395 10.464-2.79 2.092-1.395 3.487-1.395 4.882-2.79l1.396-1.396c1.395-1.395 2.79-2.092 4.185-3.487 1.395-1.395 2.79-2.79 3.488-4.186 1.395-2.79 2.092-6.278 2.79-9.765v-4.883s-.698-.698-2.093-1.395Z" fill="#FFF"/></svg>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

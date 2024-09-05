@@ -1,0 +1,456 @@
+:root {
+  --vermilion-50: #fff5ec;
+  --vermilion-100: #ffe9d3;
+  --vermilion-200: #ffcfa5;
+  --vermilion-300: #ffad6d;
+  --vermilion-400: #ff7e32;
+  --vermilion-500: #ff5b0a;
+  --vermilion-600: #ff4000;
+  --vermilion-700: #cc2b02;
+  --vermilion-800: #a1220b;
+  --vermilion-900: #821f0c;
+  --vermilion-950: #460c04;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+nav,
+.offcanvas {
+  background-color: var(--vermilion-500);
+}
+
+.navbar-toggler {
+  border-color: var(--vermilion-100);
+}
+
+.navbar-toggler-icon {
+  fill: var(--vermilion-100);
+}
+
+nav a.nav-link,
+nav a.navbar-brand,
+.offcanvas-title {
+  color: var(--vermilion-50);
+}
+
+nav a.nav-link,
+nav a.navbar-brand {
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  letter-spacing: 0.05rem;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+nav a.nav-link:focus,
+nav a.nav-link:hover,
+nav a.navbar-brand:focus,
+nav a.navbar-brand:hover {
+  color: #fff;
+}
+
+nav a.nav-link:focus:after,
+nav a.nav-link:hover:after,
+nav a.navbar-brand:focus:after,
+nav a.navbar-brand:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+nav a.nav-link:after,
+nav a.navbar-brand:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+/* Home styles */
+
+#inicio {
+  background-image: url(/assets/images/home.svg) !important;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#inicio h1 {
+  font-weight: bold;
+  color: var(--vermilion-950);
+}
+
+#inicio p {
+  font-size: 1.2rem;
+}
+
+#inicio button, #descubre, #para-ti button {
+  font-family: inherit;
+  font-size: 20px;
+  background: var(--vermilion-500);
+  color: white;
+  padding: 0.5em 1.5em;
+  padding-left: 0.9em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+#descubre{
+    cursor: initial;
+    background: var(--vermilion-700);
+}
+
+#inicio button span, #para-ti button span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+#inicio button svg, #para-ti button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+  fill: #fff;
+}
+
+#inicio button:hover, #para-ti button:hover {
+  background-color: var(--vermilion-600);
+}
+
+#inicio button:hover .svg-wrapper, #para-ti button:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+#inicio button:hover svg {
+  transform: translateX(100%) scale(1.1);
+}
+
+#para-ti button:hover svg {
+  transform: translateX(200%) scale(1.1);
+}
+
+#inicio button:hover span, #para-ti button:hover span {
+  transform: translateX(100em);
+}
+
+#inicio button:active, #para-ti button:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
+#home-img {
+  width: 80% !important;
+  height: auto;
+  animation: rotation 20s ease-in-out infinite alternate;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(-90deg);
+    }
+  }
+
+/* Para negocios */
+#para-negocios{
+  background-image: url(/assets/images/para-negocios.svg);
+  background-size: cover;
+}
+
+#para-negocios h2,
+#para-ti h2,
+#preguntas h2,
+#descarga h2 {
+  color: var(--vermilion-700);
+  font-weight: bold;
+}
+
+#para-negocios p {
+  font-size: 1.1rem;
+  color: var(--vermilion-800);
+}
+
+#para-negocios label  {
+  color: var(--vermilion-900);
+}
+
+#para-negocios form input,
+#para-negocios form textarea {
+  border-color: var(--vermilion-300);
+}
+
+#para-negocios form input:focus,
+#para-negocios form textarea:focus {
+  box-shadow: 0px 0px 0px 3px rgba(255, 64, 0, 0.3);
+}
+
+#para-negocios form button {
+  background-color: var(--vermilion-800);
+  padding: 0.5rem 3.5rem;
+  color: white;
+  border: none;
+}
+
+#para-negocios form button:hover {
+  background-color: var(--vermilion-700);
+}
+
+#para-negocios h3 {
+  color: var(--vermilion-900);
+  font-weight: bold;
+}
+
+.card{
+  border-color: rgba(204, 77, 4, 0.1);
+  transition: all 0.5s ease-in-out;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 5px rgb(70, 12, 4,0.4);
+}
+
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 10px 10px 10px rgb(70, 12, 4,0.4);
+}
+
+.card svg{
+  background-color: var(--vermilion-400);
+  fill: var(--vermilion-100);
+  border-radius: 0.5rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.card:hover svg{
+  transform: scale(1.2);
+}
+
+.card h5{
+  font-size: 1.01rem;
+  color: #460c04;
+  text-transform: uppercase;
+}
+
+.card p{
+  font-size: .85rem !important;
+  color: var(--vermilion-800) !important;
+}
+
+form{
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+/* Para ti */
+
+#para-ti{
+  background-image: url(/assets/images/para-ti.svg);
+  background-size: cover;
+  color: var(--vermilion-900);
+  background-attachment: fixed;
+}
+
+#para-ti .img-fluid {
+  border: 3px solid var(--vermilion-300);
+  border-radius: 10px;
+  transition: all 0.6s ease-in-out;
+}
+
+#para-ti h5 {
+  color: var(--vermilion-700);
+}
+
+.resalt{
+  font-size: 3.5rem;
+  color: #ff4000;
+}
+
+#para-ti a{
+  text-decoration: none;
+}
+
+#para-ti .col:hover img{
+  transform: scale(1.1);
+}
+
+/* Preguntas */
+
+#preguntas .accordion-button {
+  background-color: var(--vermilion-100);
+  color: var(--vermlion-900);
+  
+}
+
+#preguntas .accordion-button:focus {
+  box-shadow: none;
+  
+ }
+
+#preguntas .accordion-button:not(.collapsed) {
+  background-color: var(--vermilion-300);
+  color: white ;
+}
+
+#preguntas .accordion-collapse {
+  border-top: 2px solid var(--vermilion-400);
+}
+
+#preguntas img{
+  animation: jump 0.5s ease-in-out infinite alternate;
+}
+
+.accordion-item{
+  border-color: rgba(255, 64, 0, 0.3);
+}
+
+@keyframes jump {
+    from {
+      transform: translateY(0px);
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: translateY(10px);
+      transform: rotate(5deg);
+    }
+  }
+
+/* Descarga */
+
+#descarga {
+  background-color: var(--vermilion-600);
+}
+
+#descarga h2{
+  color: var(--vermilion-100);
+}
+
+#descarga button {
+  background-color: var(--vermilion-400);
+  flood-color: white;
+  border: none;
+}
+
+#descarga button:hover {
+  background-color: var(--vermilion-500);
+}
+
+footer {
+  background-color: var(--vermilion-950);
+}
+
+footer p {
+  margin: 0;
+}
+
+.promo-image {
+  max-width: 50%;
+  height: auto;
+  border-radius: 15px; 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.promo-image:hover {
+  transform: scale(1.05) rotate(2deg); 
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); 
+}
+
+.store-icon {
+  width: 180px;
+  transition: transform 0.3s;
+}
+
+.store-icon:hover {
+  transform: scale(1.1); 
+}
+
+.btn-success {
+  background-color: #25D366;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.btn-success:hover {
+  background-color: #1ebe57;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: #25D366;
+  border-radius: 50%;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: white;
+}
+
+.whatsapp-float::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(37, 211, 102, 0.5);
+  border-radius: 50%;
+  animation: pulso 1.5s ease-in-out infinite;
+  z-index: -1;
+}
+
+@keyframes pulso {
+  0% {
+      transform: scale(1);
+      opacity: 1;
+  }
+  100% {
+      transform: scale(1.8);
+      opacity: 0;
+  }
+}
+
+.whatsapp-float svg {
+  width: 35px;
+  height: 35px;
+}
+
+.whatsapp-float:hover {
+  background-color: #20b85b;
+}
