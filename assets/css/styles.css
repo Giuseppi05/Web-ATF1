@@ -82,7 +82,7 @@ nav a.navbar-brand:after {
 /* Home styles */
 
 #inicio {
-  background-image: url(assets/images/home.svg) !important;
+  background-image: url(/assets/images/home.svg) !important;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -183,7 +183,7 @@ nav a.navbar-brand:after {
 
 /* Para negocios */
 #para-negocios{
-  background-image: url(assets/images/para-negocios.svg);
+  background-image: url(/assets/images/para-negocios.svg);
   background-size: cover;
 }
 
@@ -272,7 +272,7 @@ form{
 /* Para ti */
 
 #para-ti{
-  background-image: url(assets/images/para-ti.svg);
+  background-image: url(/assets/images/para-ti.svg);
   background-size: cover;
   color: var(--vermilion-900);
   background-attachment: fixed;
